@@ -11,18 +11,7 @@ let package = Package(
             name: "FullCore",
             targets: ["FullCore"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "FullCore",
-            dependencies: []),
-        .testTarget(
-            name: "FullCoreTests",
-            dependencies: ["FullCore"]),
+        .binaryTarget(name: "FullCore", url: "https://pods.regulaforensics.com/Full/7.2.9102/DocumentReaderCore_full_7.2.9102.zip", checksum: "71e8fed18b5cec896cfabf497495c810883a45997af4058c02c7a657fc80d4e2"),
     ]
 )
