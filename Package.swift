@@ -3,6 +3,7 @@
 
 import PackageDescription
 
+//7.3 immitation
 let package = Package(
     name: "FullCore",
     products: [
